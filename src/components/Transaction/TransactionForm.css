@@ -1,0 +1,184 @@
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes fade-in-out {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.animate-fade-in-out {
+  animation-name: fade-in-out;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.transaction-card {
+  background: linear-gradient(135deg, #f0f4ff, #c9d6ff);
+  border-radius: 16px;
+  padding: 32px 36px;
+  max-width: 520px;
+  margin: 2rem auto;
+  box-shadow: 0 14px 30px rgba(0, 45, 105, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a2e6e;
+  margin-bottom: 28px;
+  user-select: none;
+  letter-spacing: 1.2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-card-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.transaction-card-select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 55, 120, 0.15);
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: white;
+  appearance: none;
+  outline-offset: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.transaction-card-select:focus {
+  box-shadow: 0 5px 18px rgba(0, 70, 150, 0.6);
+  background-color: #e8f0fe;
+}
+
+.transaction-type-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.transaction-type-toggle button {
+  flex: 1;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 40, 90, 0.1);
+  transition: all 0.3s ease;
+  color: #58677c;
+  background-color: #dbe7ff;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-type-toggle button svg {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+.transaction-type-toggle button.active.purchase {
+  background: linear-gradient(45deg, #0057b7, #003c8f);
+  color: white;
+  box-shadow: 0 6px 16px rgba(0, 87, 183, 0.8);
+}
+
+.transaction-type-toggle button.active.sale {
+  background: linear-gradient(45deg, #b72626, #7f1a1a);
+  color: white;
+  box-shadow: 0 6px 16px rgba(183, 38, 38, 0.8);
+}
+
+.transaction-type-toggle button.inactive:hover {
+  background-color: #a9c0ff;
+  color: #003366;
+  box-shadow: 0 5px 15px rgba(0, 70, 150, 0.5);
+}
+
+.transaction-card-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 50, 120, 0.15);
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline-offset: 4px;
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.transaction-card-input::placeholder {
+  color: #7a8ba6;
+  font-style: italic;
+}
+
+.transaction-card-input:focus {
+  box-shadow: 0 5px 20px rgba(0, 80, 150, 0.6);
+  background-color: #eaf2ff;
+}
+
+.transaction-card-submit {
+  margin-top: 8px;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(45deg, #004aad, #002f70);
+  box-shadow: 0 7px 20px rgba(0, 74, 173, 0.9);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.transaction-card-submit:hover {
+  background: linear-gradient(45deg, #002f70, #001c44);
+}
+
+.feedback-message {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 12px;
+  animation: fadeInOut 2.5s ease forwards;
+  gap: 10px;
+  user-select: none;
+}
+
+.feedback-message svg {
+  font-size: 1.5rem;
+}
+
+.feedback-message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid
+}

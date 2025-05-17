@@ -1,0 +1,183 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #83b0f3;
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  width: 190%;
+  padding: 30px 20px;
+  gap: 40px;
+  margin-left: -45%;
+}
+
+@media (min-width: 992px) {
+  .login-page {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .login-info,
+  .login-form-container {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Info izquierda */
+.login-info {
+  background-color: #cadefc ;
+  border-radius: 24px;
+  padding: 60px 50px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+
+}
+
+.app-name {
+  font-size: 3rem;
+  color: #003366;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.features li {
+  font-size: 1.2rem;
+  margin: 14px 0;
+  color: #444;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.footer-note {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Formulario */
+.login-form-container {
+  background-color: #bdcde6 ;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .login-form-container {
+    width: 50%;
+  }
+}
+
+.login-form-container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.login-form-container input {
+  width: 100%;
+  padding: 16px 18px;
+  margin-bottom: 22px;
+  border: none;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 50, 0.1);
+  font-size: 1.05rem;
+}
+
+.login-form-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 80, 150, 0.3);
+}
+
+.email-login-btn,
+.google-login-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.email-login-btn {
+  background-color: #003366;
+  color: white;
+}
+
+.email-login-btn:hover {
+  background-color: #00264d;
+}
+
+.google-login-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.google-login-btn:hover {
+  background-color: #a52720;
+}
+
+.divider {
+  text-align: center;
+  margin: 28px 0;
+  color: #666;
+  font-weight: bold;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.error-message {
+  color: #e53935;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+}
