@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Proyecto-Contable/static/css/main.22d4e517.css",
+    "main.js": "/Proyecto-Contable/static/js/main.31637c66.js",
+    "index.html": "/Proyecto-Contable/index.html",
+    "main.22d4e517.css.map": "/Proyecto-Contable/static/css/main.22d4e517.css.map",
+    "main.31637c66.js.map": "/Proyecto-Contable/static/js/main.31637c66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22d4e517.css",
+    "static/js/main.31637c66.js"
+  ]
+}
